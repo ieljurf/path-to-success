@@ -1,0 +1,773 @@
+/* -------------------- CSS BY IDA EL-JURF -------------------------------------- */
+
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+
+:root {
+--Teal :#4CA7C0;
+--Purple: #484FB7;
+--Lavender:  #6B8FE7;
+--Yellow: #E9BB57; 
+--Pink:#D9526F;
+--Dark-gray:#1E1E1E; 
+--White:#ffffff; 
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+body{
+    min-width: 450px;
+    width: 100%;
+    font-family: 'Inter', serif;
+    background-color: var(--Purple);
+    margin: auto;
+}
+
+header > p {
+    position: relative;
+    font-style: italic;
+    text-align: center;
+    background-color: var(--Pink);
+    color: #ffffff;
+    top: -10px;
+    z-index: 1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 95%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: Kavoon;
+}
+
+h1 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--Lavender);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+h2 {
+    padding-left: 15px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--Yellow);
+    padding-top: 10px;
+    padding-left: 15px;
+}
+h4 {
+    font-size: 1.15em;
+    color: var(--Purple);
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom:10px;
+}
+
+p {
+    color: var(--dark-gray);
+}
+
+span {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    width: 100px;
+    height: 45px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: var(--Yellow);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #1E1E1E;
+}
+
+nav h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Inter';
+    background-color: var(--Yellow);
+    color:#1E1E1E ;
+    font-size: 1.5em;
+    text-align: center;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+nav li {
+    font-family: 'Inter';
+    color: #1E1E1E;
+    font-size: 1.5em;
+    text-align: center;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+nav a {
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+nav ul {
+    visibility: hidden;
+}
+
+article h2{
+    background-color: #484FB7;
+}
+
+section .box-item {
+    background-color: var(--White);
+    margin: 20px auto; 
+    width: 75%;
+    position: relative;
+    padding: 20px; 
+    border-radius: 15px; 
+}
+
+#oneonone, #groupcoaching, #workshopsseminars, #onlinecourses {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#whychooseus > h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#whychooseus > h3 {
+    color: #E9BB57;
+    padding-top: 40px;
+}    
+
+#whychooseus ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#whychooseus li {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: var(--dark-gray);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#whychooseus ul li:nth-child(1) {
+    background-color: var(--Teal);
+}
+
+#whychooseus ul li:nth-child(2) {
+    background-color: var(--Lavender);
+}
+
+#whychooseus ul li:nth-child(3) {
+    background-color: var(--Yellow);
+}
+
+#whychooseus ul li:nth-child(4) {
+    background-color: var(--White);
+}
+
+#prices {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    text-align: center;
+}
+
+#prices > h2:first-child {
+    display: block;
+    background-color: #484FB7;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+table {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3, div {
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid var(--Yellow);
+}
+
+th {
+    background: var(--Yellow);
+    font-weight: bold;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr {
+    background-color: #ffffff;
+}
+
+aside {
+    background-color: var(--Pink);
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+aside h2 {
+background-color: #D9526F;
+}
+
+h2, .firststep {
+    background-color: #D9526F;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+aside p {
+    display:inline-block;
+    margin: 0;
+    color: var(--White);
+    padding-bottom: 5px;
+    line-height: 1.5;  
+    word-spacing: 1.5px; 
+    letter-spacing: 0.5px;
+    padding-left: 13px;
+    padding-right: 13px;  
+} 
+
+h2 #firststep {
+    background-color: #D9526F;
+}
+
+button {
+    display: inline-block;  
+    width: 350px;     
+    height: 60px;   
+    background-color: white; 
+    color: black;    
+    box-shadow: 5px 5px 15px var(--Dark-gray);
+    font-size: 18px;     
+    font-weight: bold;   
+    border: 1.5px solid black; 
+    border-radius: 15px;   
+    cursor: pointer;    
+    margin: 8px auto; 
+    text-align: center; 
+    padding-left: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--Lavender);
+    margin-bottom: 50px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+small {
+    color: var(--White);
+    text-align: center;
+    font-size:small;
+}
+
+small a {
+    text-decoration: underline;
+    text-align: center;
+    color: var(--white);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+
+@media screen and (min-width: 620px) {
+
+.groupcoaching, .workshopsseminars, .onlinecourses {
+    margin-bottom: 5px; 
+}
+
+table {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+span {
+    display:contents    
+}
+
+h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 5px; 
+}
+
+.oneonone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 5px; 
+}
+
+.oneonone .box-item:nth-child(4) { 
+    grid-column: 1 / 3;
+}
+
+.groupcoaching {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+section .box-item{
+    margin: 20px;
+    width: fit-content;
+}
+
+h3, h4 {
+    margin: 5px 0; 
+}
+
+p {
+    line-height: 1.5; 
+}
+
+#whychooseus ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    flex-wrap: nowrap; 
+    width: 95%;
+    padding-left: 15px;
+}
+
+#whychooseus li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px; 
+    flex: 1;
+    min-width: 100px;
+    white-space: normal; 
+}
+
+#whychooseus li br {
+    display: none; 
+}   
+
+section, #prices  {
+padding-top: 10px;
+background-color: #484FB7;
+}
+
+#prices h2 {
+    grid-column: 1/-1;
+    background-color: #484FB7;
+}
+
+#prices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px;
+}
+
+#prices section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h3 {
+    
+    text-align: left;
+    padding-left: 12px;
+}
+
+table {
+    width:auto;
+    border-collapse: collapse;
+    padding-left: 25px;
+}
+
+th {
+    background-color: var(--Yellow);
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    
+}
+
+td {
+    background-color: #ffffff;
+    text-align: left;
+    
+}
+
+#step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.firststep-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 3px;
+}
+
+#schedulebutton {
+    grid-column: 2 / 3;
+    justify-self: center; 
+    align-self: start; 
+    padding: 10px 70px;
+}
+
+#prices h2 {
+    background-color: var(--Purple) !important;
+}	
+}
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+
+@media screen and (min-width: 950px) {
+
+header nav h2 {
+    visibility: hidden;
+}
+
+nav {
+    width: 600px;
+}
+
+nav li {
+    visibility: visible;
+    display: inline-flex;
+    color: var(--Dark-gray);
+    font-family: 'Inter';
+    font-size:small;
+    font-weight: bold;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 0px;
+}
+
+li a {
+    
+    color: var(--Dark-gray);
+    text-decoration:none;
+    text-transform: uppercase;
+    padding-left: 35px;
+    padding-top: 3px;    
+}
+
+li a:hover {
+    color: white;
+}
+
+#groupcoaching, h3 {
+    padding-top: 0px;
+    margin: 0px;
+}
+
+article h2 {
+    grid-column: 1/-1;
+    background-color: #484FB7;
+}
+
+article h3 {
+text-align: left;
+}
+
+#ourservices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px 0;
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    max-width: 1280px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+table, h3 {
+    width:100%;
+    padding-left: 5px;
+}
+
+th {
+    width:100%;
+}
+
+div, .pricingcategory {
+    display: block;
+    flex-direction: column;
+    gap: 5px;
+    grid-column: span 1;
+}
+
+table {
+        width: 100%; 
+        table-layout: fixed; 
+}	
+
+table td, table th {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal; 
+}
+
+.oneonone, .groupcoaching, .workshopsseminars, .onlinecourses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-column: span 1; 
+}
+
+#prices > div:nth-child(5) {
+    padding-right: 15px;
+}
+
+#prices, h3 {
+    text-wrap: nowrap;
+}
+
+#prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr); 
+    grid-template-columns: repeat(4, auto); 
+    gap: 10px;
+    margin-right: 10px;
+}
+
+#prices, tr {
+    font-weight: normal;
+}
+
+header nav h2 {
+    visibility: hidden;
+}
+
+nav {
+    width: 600px;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 0px;
+}
+
+nav li {
+    visibility: visible;
+    display: inline-flex;
+    color: var(--Dark-gray);
+    font-family: 'Inter';
+    font-size:small;
+    font-weight: bold;
+}
+
+li a {
+    color: var(--Dark-gray);
+    text-decoration:none;
+    text-transform: uppercase;
+    padding-left: 35px;
+    padding-top: 3px;
+}
+
+li a:hover {
+    color: white;
+}
+
+article h2 {
+    grid-column: 1/-1;
+    background-color: #484FB7;
+}
+
+article h3 {
+text-align: left;
+}
+
+#ourservices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px 0;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.h4-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    position: sticky;
+    background-color: var(--White);
+    z-index: 5;
+    padding-bottom: 10px;
+}
+
+.h4-container h4 {
+    white-space: nowrap;
+}
+
+.oneonone, .groupcoaching, .workshopsseminars, .onlinecourses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.oneonone {
+    display: flex; 
+    flex-direction: column;
+    grid-column: span 1;
+}
+
+#prices, h3 {
+    font-size: 1.15em;
+    text-wrap: nowrap;
+    font-weight: bolder;
+}
+
+#prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr); 
+    grid-template-columns: repeat(4, auto); 
+    gap: 10px;
+    margin-right: 10px;
+}
+}
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
+@media screen and (min-width:1280px) {
+
+body {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+}
